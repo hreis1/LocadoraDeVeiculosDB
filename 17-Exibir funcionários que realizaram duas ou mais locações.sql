@@ -1,6 +1,6 @@
 -- SQLite
 
--- 18 - Construa uma consulta capaz de exibir somente os funcionários que realizaram mais ou igual a 2 locações.
+-- Consulta capaz de exibir somente os funcionários que realizaram mais ou igual a 2 locações.
 
 SELECT NAME, COUNT(LOCATIONS.ID) FROM EMPLOYEES 
 JOIN LOCATIONS ON (EMPLOYEES.ID = LOCATIONS.EMPLOYEE_ID)
